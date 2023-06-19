@@ -1,4 +1,4 @@
-import { inspect } from "util";
+// import { inspect } from "util";
 
 /**
  * The default export of the "ono" module.
@@ -143,12 +143,12 @@ export interface OnoError<T> extends ErrorPOJO {
    */
   toJSON(): ErrorPOJO & T;
 
-  /**
-   * Returns a representation of the error for Node's `util.inspect()` method.
-   *
-   * @see https://nodejs.org/api/util.html#util_custom_inspection_functions_on_objects
-   */
-  [inspect.custom](): ErrorPOJO & T;
+  // /**
+  //  * Returns a representation of the error for Node's `util.inspect()` method.
+  //  *
+  //  * @see https://nodejs.org/api/util.html#util_custom_inspection_functions_on_objects
+  //  */
+  // [inspect.custom](): ErrorPOJO & T;
 }
 
 /**
